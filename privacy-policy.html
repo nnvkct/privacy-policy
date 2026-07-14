@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chính sách bảo mật - n8n Auto Post Connector</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #1c1e21;
+  }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 32px; color: #1c1e21; border-bottom: 1px solid #e4e6eb; padding-bottom: 6px; }
+  p, li { font-size: 15px; color: #333; }
+  .updated { color: #65676b; font-size: 14px; margin-bottom: 32px; }
+  ul { padding-left: 20px; }
+  .contact-box {
+    background: #f0f2f5;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 12px;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid #e4e6eb;
+    font-size: 13px;
+    color: #65676b;
+  }
+</style>
+</head>
+<body>
+
+<h1>Chính sách bảo mật</h1>
+<p class="updated">Áp dụng cho: n8n Auto Post Connector &nbsp;|&nbsp; Cập nhật lần cuối: 14/07/2026</p>
+
+<p>
+  Chính sách này mô tả cách "n8n Auto Post Connector" ("Ứng dụng", "chúng tôi") thu thập,
+  sử dụng và bảo vệ thông tin khi được sử dụng để tự động đăng nội dung lên các Trang
+  (Page) Facebook thông qua Facebook Graph API.
+</p>
+
+<h2>1. Ứng dụng này là gì</h2>
+<p>
+  Đây là một công cụ tự động hóa nội bộ, được xây dựng trên nền tảng workflow n8n, dùng để
+  nhận nội dung (văn bản, hình ảnh, liên kết) từ một hệ thống nội bộ và tự động đăng lên
+  Trang Facebook thông qua Facebook Graph API. Ứng dụng không phải là sản phẩm công khai
+  cho người dùng cuối và không thu thập dữ liệu từ khách truy cập Trang Facebook.
+</p>
+
+<h2>2. Thông tin chúng tôi thu thập và xử lý</h2>
+<ul>
+  <li><strong>Page ID</strong> — mã định danh của Trang Facebook được đăng bài.</li>
+  <li><strong>Page Access Token</strong> — mã truy cập do quản trị viên Trang cung cấp,
+    dùng để xác thực yêu cầu đăng bài với Facebook Graph API.</li>
+  <li><strong>Nội dung bài đăng</strong> — tiêu đề, nội dung văn bản, đường dẫn hình ảnh
+    hoặc liên kết do người dùng nội bộ nhập vào để đăng lên Trang.</li>
+  <li><strong>Kết quả phản hồi từ Facebook</strong> — ID bài viết, đường dẫn permalink,
+    trạng thái thành công/thất bại của mỗi lần đăng, dùng cho mục đích ghi log nội bộ.</li>
+</ul>
+<p>
+  Chúng tôi <strong>không thu thập</strong> dữ liệu cá nhân của người dùng Facebook,
+  không truy cập danh sách bạn bè, tin nhắn riêng tư, hay bất kỳ dữ liệu nào ngoài phạm vi
+  cần thiết để thực hiện thao tác đăng bài lên Trang.
+</p>
+
+<h2>3. Cách chúng tôi sử dụng thông tin</h2>
+<p>
+  Dữ liệu nêu trên chỉ được sử dụng để:
+</p>
+<ul>
+  <li>Thực hiện lệnh gọi API đăng bài (text, hình ảnh, liên kết) lên Trang Facebook được chỉ định.</li>
+  <li>Ghi lại nhật ký (log) kết quả đăng bài phục vụ mục đích theo dõi và xử lý lỗi nội bộ.</li>
+</ul>
+<p>
+  Chúng tôi <strong>không bán, không chia sẻ, không chuyển giao</strong> dữ liệu này cho
+  bất kỳ bên thứ ba nào ngoài Facebook (để thực hiện đúng chức năng đăng bài).
+</p>
+
+<h2>4. Lưu trữ và bảo mật dữ liệu</h2>
+<ul>
+  <li>Page Access Token được truyền qua kết nối HTTPS và không được lưu trữ cố định (hardcode)
+    trong mã nguồn workflow.</li>
+  <li>Dữ liệu log (bao gồm post ID, thời gian, trạng thái) được lưu trữ trong hệ thống nội bộ,
+    chỉ truy cập được bởi quản trị viên hệ thống.</li>
+  <li>Chúng tôi áp dụng các biện pháp bảo mật hợp lý để ngăn chặn truy cập, sử dụng hoặc
+    tiết lộ trái phép đối với dữ liệu nêu trên.</li>
+</ul>
+
+<h2>5. Thời gian lưu giữ dữ liệu</h2>
+<p>
+  Log kết quả đăng bài được lưu giữ trong thời gian cần thiết để phục vụ mục đích vận hành
+  và xử lý lỗi, sau đó có thể được xóa định kỳ theo chính sách nội bộ.
+</p>
+
+<h2>6. Xóa dữ liệu (Data Deletion)</h2>
+<p>
+  Nếu bạn là quản trị viên Trang Facebook và muốn yêu cầu xóa dữ liệu liên quan (Page ID,
+  log bài đăng) khỏi hệ thống của chúng tôi, vui lòng liên hệ qua email bên dưới. Yêu cầu
+  sẽ được xử lý trong thời gian hợp lý.
+</p>
+
+<h2>7. Thay đổi chính sách</h2>
+<p>
+  Chính sách này có thể được cập nhật theo thời gian. Mọi thay đổi sẽ được phản ánh trên
+  trang này kèm ngày cập nhật mới nhất.
+</p>
+
+<h2>8. Liên hệ</h2>
+<div class="contact-box">
+  <p style="margin:0;">Nếu có bất kỳ câu hỏi nào về chính sách bảo mật này hoặc muốn yêu cầu xóa dữ liệu, vui lòng liên hệ:</p>
+  <p style="margin:8px 0 0 0;"><strong>Email:</strong> nnvkct@yahoo.com</p>
+</div>
+
+<footer>
+  © 2026 n8n Auto Post Connector. Tài liệu này được cung cấp nhằm đáp ứng yêu cầu Privacy Policy URL của Meta for Developers.
+</footer>
+
+</body>
+</html>
